@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/resources/favicon.ico" type="image/x-icon">
+    <title>Dice Game</title>
+</head>
+
+<body>
+    <h1>Dice Game</h1>
+    <div id="player1">
+        <h2>Player 1</h2>
+        <form>
+            <input type="text" id="p1name" placeholder="Enter Name">
+            <br>
+            <input class="button" type="submit" value="Submit" onclick="getPlayer1Name()">
+        </form>
+    </div>
+    <div id="player2" style="display: none;">
+        <h2>Player 2</h2>
+        <form>
+            <input type="text" id="p2name" placeholder="Enter Name">
+            <br>
+            <input class="button" type="submit" value="Submit" onclick="getPlayer2Name()">
+        </form>
+    </div>
+    <div id="result" style="display: none;"></div>
+    <div id="play-again" style="display: none;">
+        <button class="button" style="margin-top: 4%; color: green;" onclick="playAgain()">Play Again</button>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
